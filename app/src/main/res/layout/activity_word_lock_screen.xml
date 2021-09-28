@@ -6,4 +6,279 @@
     android:layout_height="match_parent"
     tools:context=".activities.words.WordLockScreen">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSkip"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:shadowColor="#515151"
+        android:text="Skip"
+        android:textColor="#4E4D4D"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:strokeColor="#3C3C3C"
+        app:strokeWidth="1.5dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOk"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:shadowColor="#515151"
+        android:text="ok"
+        android:textColor="#4E4D4D"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54"
+        app:strokeColor="#3C3C3C"
+        app:strokeWidth="1.5dp" />
+
+
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/et4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/et1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/et2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/et3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et8"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@+id/et7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et7"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/et6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toEndOf="@+id/et5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="267dp"
+        android:layout_height="34dp"
+        android:text="Identify the image"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/wordView"
+        android:layout_width="267dp"
+        android:layout_height="34dp"
+        android:textAlignment="center"
+        android:textColor="#4E4D4D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <!--        tools:srcCompat="@drawable/telescope" -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="221dp"
+        android:layout_height="235dp"
+        android:background="@drawable/telescope"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:strokeColor="#4E4D4D"
+        app:strokeWidth="3dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFavourite"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:button="@drawable/selector_favourite_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        app:useMaterialThemeColors="false" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHelpEye"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:button="@drawable/selector_help_eye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        app:useMaterialThemeColors="false" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSpeaker"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:button="@drawable/selector_speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        app:useMaterialThemeColors="false" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
