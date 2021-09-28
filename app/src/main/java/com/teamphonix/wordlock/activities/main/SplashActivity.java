@@ -18,6 +18,7 @@ import com.teamphonix.wordlock.R;
 import com.teamphonix.wordlock.activities.lock.GestureSelfUnlockActivity;
 import com.teamphonix.wordlock.activities.pwd.CreatePwdActivity;
 import com.teamphonix.wordlock.activities.words.SelectWords;
+import com.teamphonix.wordlock.activities.words.WordLockScreen;
 import com.teamphonix.wordlock.base.AppConstants;
 import com.teamphonix.wordlock.base.BaseActivity;
 import com.teamphonix.wordlock.services.BackgroundManager;
@@ -99,7 +100,7 @@ public class SplashActivity extends BaseActivity {
                 }
             });
         } else {
-            gotoCreatePwdActivity();
+            gotoCreateAccount();
         }
 
     }
@@ -109,14 +110,14 @@ public class SplashActivity extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RESULT_ACTION_USAGE_ACCESS_SETTINGS) {
             if (LockUtil.isStatAccessPermissionSet(SplashActivity.this)) {
-                gotoCreatePwdActivity();
+                gotoCreateAccount();
             } else {
                 ToastUtil.showToast("Permission denied");
                 finish();
             }
         }
         if (requestCode == RESULT_ACTION_ACCESSIBILITY_SETTINGS) {
-            gotoCreatePwdActivity();
+            gotoCreateAccount();
         }
         //check registered
     }
@@ -145,8 +146,23 @@ public class SplashActivity extends BaseActivity {
         return false;
     }
 
-    private void gotoCreatePwdActivity() {
-        Intent intent2 = new Intent(SplashActivity.this, CreatePwdActivity.class);
+    private void gotoCreateAccount() {
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean registerStatus = mSharedPreferences.getBoolean(AppConstants.SHARED_PREFERENCE_REGISTERED_USER, false);
+        if (registerStatus) {
+            gotoSelectWord();
+        } else {
+            Intent intent2 = new Intent(SplashActivity.this, CreateAccount.class);
+            startActivity(intent2);
+            finish();
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        }
+
+    }
+
+    private void gotoSelectWord() {
+//        Intent intent2 = new Intent(SplashActivity.this, SelectWords.class);
+        Intent intent2 = new Intent(SplashActivity.this, WordLockScreen.class);
         startActivity(intent2);
         finish();
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
