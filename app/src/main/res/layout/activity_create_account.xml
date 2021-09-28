@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00373737"
+    tools:context=".activities.main.CreateAccount">
+
+    <EditText
+        android:id="@+id/InputPwd"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#373737"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputEmail"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/InputRetypePwd"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#373737"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputPwd"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <EditText
+        android:id="@+id/InputEmail"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#373737"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputUsername"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <EditText
+        android:id="@+id/InputUsername"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/ic_username"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#373737"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/BtnRegister"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/btn_fill"
+        android:text="Register"
+        android:textStyle="bold"
+        app:backgroundTint="#4E4D4D"
+        app:layout_constraintEnd_toEndOf="@+id/InputRetypePwd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/InputRetypePwd"
+        app:layout_constraintTop_toBottomOf="@+id/InputRetypePwd" />
+
+    <TextView
+        android:id="@+id/TxtHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already Have an Account ?"
+        app:layout_constraintEnd_toEndOf="@+id/BtnRegister"
+        app:layout_constraintStart_toStartOf="@+id/BtnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/BtnRegister" />
+
+    <CheckBox
+        android:id="@+id/CheckBoxAgreePrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Agree Privacy Policy"
+        app:layout_constraintBottom_toTopOf="@+id/BtnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/InputRetypePwd"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/InputRetypePwd"
+        app:layout_constraintTop_toBottomOf="@+id/InputRetypePwd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TxtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtHaveAccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
