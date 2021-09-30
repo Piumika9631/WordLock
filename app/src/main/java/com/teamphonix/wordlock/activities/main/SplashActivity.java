@@ -3,7 +3,6 @@ package com.teamphonix.wordlock.activities.main;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -16,9 +15,7 @@ import androidx.annotation.Nullable;
 
 import com.teamphonix.wordlock.R;
 import com.teamphonix.wordlock.activities.lock.GestureSelfUnlockActivity;
-import com.teamphonix.wordlock.activities.pwd.CreatePwdActivity;
-import com.teamphonix.wordlock.activities.words.SelectWords;
-import com.teamphonix.wordlock.activities.words.WordLockScreen;
+import com.teamphonix.wordlock.activities.words.SelectWordsActivity;
 import com.teamphonix.wordlock.base.AppConstants;
 import com.teamphonix.wordlock.base.BaseActivity;
 import com.teamphonix.wordlock.services.BackgroundManager;
@@ -161,8 +158,7 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void gotoSelectWord() {
-//        Intent intent2 = new Intent(SplashActivity.this, SelectWords.class);
-        Intent intent2 = new Intent(SplashActivity.this, WordLockScreen.class);
+        Intent intent2 = new Intent(SplashActivity.this, SelectWordsActivity.class);
         startActivity(intent2);
         finish();
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

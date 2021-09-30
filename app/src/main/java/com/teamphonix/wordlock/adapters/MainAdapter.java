@@ -6,7 +6,6 @@ import android.content.pm.PackageManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -95,7 +94,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         public MainViewHolder(@NonNull View itemView) {
             super(itemView);
             mAppIcon = itemView.findViewById(R.id.app_icon);
-            mAppName = itemView.findViewById(R.id.app_name);
+            mAppName = itemView.findViewById(R.id.tvWord);
             mSwitchCompat = itemView.findViewById(R.id.switch_compat);
         }
     }

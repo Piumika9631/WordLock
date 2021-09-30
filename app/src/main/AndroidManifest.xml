@@ -26,11 +26,12 @@
         android:manageSpaceActivity="com.teamphonix.wordlock.activities.main.SplashActivity"
         android:supportsRtl="true"
         android:theme="@style/Theme.WordLock">
+
         <activity
-            android:name=".activities.words.WordLockScreen"
+            android:name=".activities.wordlock.WordLockScreenImage"
             android:exported="true" />
         <activity
-            android:name=".activities.words.SelectWords"
+            android:name=".activities.words.SelectWordsActivity"
             android:exported="true" />
         <activity
             android:name=".activities.main.CreateAccount"

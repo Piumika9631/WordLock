@@ -1,4 +1,4 @@
-package com.teamphonix.wordlock.activities.words;
+package com.teamphonix.wordlock.activities.wordlock;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -13,16 +13,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.teamphonix.wordlock.R;
 
-public class WordLockScreen extends AppCompatActivity {
+public class WordLockScreenImage extends AppCompatActivity {
     CoordinatorLayout coordinatorLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_word_lock_screen);
+        setContentView(R.layout.activity_word_lock_screen_imageview);
 
         EditText ET1 = findViewById(R.id.et1);
         EditText ET2 = findViewById(R.id.et2);

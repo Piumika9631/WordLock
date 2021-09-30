@@ -7,15 +7,33 @@
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/drawable/selector_favourite_item.xml" value="0.20677083333333332" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/drawable/selector_help_eye.xml" value="0.20677083333333332" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/drawable/selector_speaker.xml" value="0.20677083333333332" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.1321954484605087" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_create_account.xml" value="0.2" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_gesture_self_unlock.xml" value="0.36666666666666664" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_select_words.xml" value="0.36666666666666664" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_main2.xml" value="0.36666666666666664" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_scrolling.xml" value="0.36666666666666664" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_select_words.xml" value="0.264" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/activity_word_lock_screen.xml" value="0.2109375" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/content_scrolling.xml" value="0.20572916666666666" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/content_select_words.xml" value="0.22604166666666667" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/dialog_lock_select_time.xml" value="0.22604166666666667" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/dialog_permission.xml" value="0.22604166666666667" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/dialog_search.xml" value="0.22604166666666667" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_app_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_camera2.xml" value="0.22604166666666667" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_first.xml" value="0.22604166666666667" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_item_list.xml" value="0.35260416666666666" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/fragment_second.xml" value="0.22604166666666667" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/item_lock_list.xml" value="0.264" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/item_lock_select_time.xml" value="0.22604166666666667" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/item_lock_top.xml" value="0.22604166666666667" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/item_main_list.xml" value="0.2859375" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/layout/item_word_list.xml" value="0.264" />
+        <entry key="..\:/ExistingApp/lockforme/app/src/main/res/menu/menu_scrolling.xml" value="0.20572916666666666" />
         <entry key="..\:/ExistingApp/lockforme/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
