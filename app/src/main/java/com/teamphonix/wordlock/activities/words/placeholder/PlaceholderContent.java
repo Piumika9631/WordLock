@@ -30,27 +30,27 @@ public class PlaceholderContent {
         addItem(new PlaceholderItem("deny", false));
         addItem(new PlaceholderItem("depress", false));
         addItem(new PlaceholderItem("demonstrate", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
-        addItem(new PlaceholderItem("depress", false));
+        addItem(new PlaceholderItem("aware", false));
+        addItem(new PlaceholderItem("automate", false));
+        addItem(new PlaceholderItem("authority", false));
+        addItem(new PlaceholderItem("available", false));
+        addItem(new PlaceholderItem("author", false));
+        addItem(new PlaceholderItem("attribute", false));
+        addItem(new PlaceholderItem("attach", false));
+        addItem(new PlaceholderItem("attain", false));
+        addItem(new PlaceholderItem("attitude", false));
+        addItem(new PlaceholderItem("assume", false));
+        addItem(new PlaceholderItem("assit", false));
+        addItem(new PlaceholderItem("assure", false));
+        addItem(new PlaceholderItem("assign", false));
+        addItem(new PlaceholderItem("assess", false));
+        addItem(new PlaceholderItem("assemble", false));
+        addItem(new PlaceholderItem("area", false));
+        addItem(new PlaceholderItem("aspect", false));
+        addItem(new PlaceholderItem("appropriate", false));
+        addItem(new PlaceholderItem("bond", false));
+        addItem(new PlaceholderItem("brief", false));
+        addItem(new PlaceholderItem("bais", false));
 
     }
 
@@ -58,16 +58,6 @@ public class PlaceholderContent {
         ITEMS.add(item);
         ITEM_MAP.put(item.word, item);
     }
-
-    private static String getWord(int position) {
-        String[] values = new String[]{"denote", "deny", "depress",
-                "demonstrate", "aware", "automate", "authority", "available",
-                "author", "attribute", "attach", "attain", "attitude", "assume",
-                "assit", "assure", "assign", "assess", "assemble", "area",
-                "aspect", "appropriate", "bond", "brief", "bais"};
-        return values[position];
-    }
-
 
     /**
      * A placeholder item representing a piece of content.

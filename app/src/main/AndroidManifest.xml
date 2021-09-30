@@ -28,7 +28,7 @@
         android:theme="@style/Theme.WordLock">
 
         <activity
-            android:name=".activities.wordlock.WordLockScreenImage"
+            android:name=".activities.wordlock.WordLockScreenImageActivity"
             android:exported="true" />
         <activity
             android:name=".activities.words.SelectWordsActivity"

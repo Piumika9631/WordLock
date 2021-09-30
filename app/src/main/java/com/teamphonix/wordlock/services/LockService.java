@@ -21,7 +21,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.teamphonix.wordlock.LockApplication;
-import com.teamphonix.wordlock.activities.lock.GestureUnlockActivity;
+import com.teamphonix.wordlock.activities.wordlock.WordLockScreenImageActivity;
 import com.teamphonix.wordlock.base.AppConstants;
 import com.teamphonix.wordlock.db.CommLockInfoManager;
 import com.teamphonix.wordlock.receiver.LockRestarterBroadcastReceiver;
@@ -214,7 +214,7 @@ public class LockService extends IntentService {
 
     private void passwordLock(String packageName) {
         LockApplication.getInstance().clearAllActivity();
-        Intent intent = new Intent(this, GestureUnlockActivity.class);
+        Intent intent = new Intent(this, WordLockScreenImageActivity.class);
 
         intent.putExtra(AppConstants.LOCK_PACKAGE_NAME, packageName);
         intent.putExtra(AppConstants.LOCK_FROM, AppConstants.LOCK_FROM_FINISH);

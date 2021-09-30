@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
+
 import androidx.appcompat.widget.Toolbar;
 
 import androidx.annotation.RequiresApi;
@@ -14,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.teamphonix.wordlock.LockApplication;
 import com.teamphonix.wordlock.R;
 import com.teamphonix.wordlock.utils.SystemBarHelper;
-
 
 
 public abstract class BaseActivity extends AppCompatActivity {

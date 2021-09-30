@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder> {
 
     @NonNull
@@ -52,12 +51,16 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     @Override
     public void onBindViewHolder(final MainViewHolder holder, final int position) {
+
         final CommLockInfo lockInfo = mLockInfos.get(position);
         initData(holder.mAppName, holder.mSwitchCompat, holder.mAppIcon, lockInfo);
         holder.mSwitchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                changeItemLockStatus(holder.mSwitchCompat, lockInfo, position);
+                if (compoundButton.isPressed()) {
+                    changeItemLockStatus(holder.mSwitchCompat, lockInfo, holder.getBindingAdapterPosition());
+                    mLockInfos.get(holder.getBindingAdapterPosition()).setLocked(b);
+                }
             }
         });
     }
@@ -78,7 +81,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
             info.setLocked(false);
             mLockInfoManager.unlockCommApplication(info.getPackageName());
         }
-        notifyItemChanged(position);
+
     }
 
     @Override

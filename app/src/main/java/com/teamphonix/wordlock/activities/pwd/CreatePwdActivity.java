@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.teamphonix.wordlock.R;
 import com.teamphonix.wordlock.activities.main.MainActivity;
+import com.teamphonix.wordlock.activities.words.SelectWordsActivity;
 import com.teamphonix.wordlock.base.AppConstants;
 import com.teamphonix.wordlock.base.BaseActivity;
 import com.teamphonix.wordlock.model.LockStage;
@@ -25,7 +26,6 @@ import com.teamphonix.wordlock.widget.LockPatternView;
 import com.teamphonix.wordlock.widget.LockPatternViewPattern;
 
 import java.util.List;
-
 
 
 public class CreatePwdActivity extends BaseActivity implements View.OnClickListener,
@@ -105,7 +105,7 @@ public class CreatePwdActivity extends BaseActivity implements View.OnClickListe
         SpUtil.getInstance().putBoolean(AppConstants.LOCK_STATE, true);
         BackgroundManager.getInstance().init(this).startService(LockService.class);
         SpUtil.getInstance().putBoolean(AppConstants.LOCK_IS_FIRST_LOCK, false);
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, SelectWordsActivity.class));
         finish();
     }
 

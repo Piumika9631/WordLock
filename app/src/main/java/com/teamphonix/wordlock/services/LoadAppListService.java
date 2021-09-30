@@ -22,7 +22,6 @@ import java.util.HashMap;
 import java.util.List;
 
 
-
 public class LoadAppListService extends IntentService {
 
     public static final String ACTION_START_LOAD_APP = "io.github.subhamtyagi.privacyapplock.service.action.LOADAPP";
@@ -41,7 +40,7 @@ public class LoadAppListService extends IntentService {
         mPackageManager = getPackageManager();
         mLockInfoManager = new CommLockInfoManager(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationUtil.createNotification(this,"App Lock","App lock Services running in background");
+            NotificationUtil.createNotification(this, "App Lock", "App lock Services running in background");
         }
     }
 
@@ -138,7 +137,7 @@ public class LoadAppListService extends IntentService {
         packageList.add("com.android.email");
         packageList.add("com.android.vending");
         //TODO:
-       // packageList.add("com.android.settings");
+        // packageList.add("com.android.settings");
         packageList.add("com.android.dialer");
         packageList.add("com.android.camera");
         //......

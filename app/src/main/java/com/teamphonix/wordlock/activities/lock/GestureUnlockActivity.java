@@ -36,15 +36,12 @@ import com.teamphonix.wordlock.widget.UnLockMenuPopWindow;
 
 import java.util.List;
 
-
-
-
 public class GestureUnlockActivity extends BaseActivity implements View.OnClickListener {
 
     public static final String FINISH_UNLOCK_THIS_APP = "finish_unlock_this_app";
     private ImageView mIconMore;
     private LockPatternView mLockPatternView;
-    private ImageView mUnLockIcon, mBgLayout, mAppLogo;
+    private ImageView mUnLockIcon, mBgLayout;
     private TextView mUnLockText, mUnlockFailTip, mAppLabel;
     private RelativeLayout mUnLockLayout;
     private PackageManager packageManager;
@@ -81,7 +78,6 @@ public class GestureUnlockActivity extends BaseActivity implements View.OnClickL
         mBgLayout = findViewById(R.id.bg_layout);
         mUnLockText = findViewById(R.id.unlock_text);
         mUnlockFailTip = findViewById(R.id.unlock_fail_tip);
-        mAppLogo = findViewById(R.id.app_logo);
         mAppLabel = findViewById(R.id.app_label);
     }
 
@@ -93,11 +89,8 @@ public class GestureUnlockActivity extends BaseActivity implements View.OnClickL
         mLockInfoManager = new CommLockInfoManager(this);
         mPopWindow = new UnLockMenuPopWindow(this, pkgName, true);
 
-
-
         initLayoutBackground();
         initLockPatternView();
-
 
         mGestureUnlockReceiver = new GestureUnlockReceiver();
         IntentFilter filter = new IntentFilter();

@@ -70,12 +70,13 @@ public class SplashActivity extends BaseActivity {
                 if (isFirstLock) {
                     showDialog();
                 } else {
-                    Intent intent = new Intent(SplashActivity.this, GestureSelfUnlockActivity.class);
-                    intent.putExtra(AppConstants.LOCK_PACKAGE_NAME, AppConstants.APP_PACKAGE_NAME);
-                    intent.putExtra(AppConstants.LOCK_FROM, AppConstants.LOCK_FROM_LOCK_MAIN_ACITVITY);
-                    startActivity(intent);
-                    finish();
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+//                    Intent intent = new Intent(SplashActivity.this, GestureSelfUnlockActivity.class);
+//                    intent.putExtra(AppConstants.LOCK_PACKAGE_NAME, AppConstants.APP_PACKAGE_NAME);
+//                    intent.putExtra(AppConstants.LOCK_FROM, AppConstants.LOCK_FROM_LOCK_MAIN_ACITVITY);
+//                    startActivity(intent);
+//                    finish();
+//                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                    gotoSelectWord();
                 }
             }
         });

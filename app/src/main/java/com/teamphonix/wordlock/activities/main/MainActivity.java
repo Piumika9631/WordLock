@@ -21,9 +21,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.teamphonix.wordlock.R;
+import com.teamphonix.wordlock.activities.pwd.CreatePwdActivity;
 import com.teamphonix.wordlock.activities.setting.LockSettingActivity;
+import com.teamphonix.wordlock.activities.words.SelectWordsActivity;
 import com.teamphonix.wordlock.base.AppConstants;
 import com.teamphonix.wordlock.base.BaseActivity;
 import com.teamphonix.wordlock.model.CommLockInfo;
@@ -52,6 +55,7 @@ public class MainActivity extends BaseActivity implements LockMainContract.View,
     private DialogSearch mDialogSearch;
     private List<String> titles;
     private List<Fragment> fragmentList;
+    private ExtendedFloatingActionButton mExtendedFab;
 
     @Override
     public int getLayoutId() {
@@ -65,11 +69,21 @@ public class MainActivity extends BaseActivity implements LockMainContract.View,
         mTabLayout = findViewById(R.id.tab_layout);
         mViewPager = findViewById(R.id.view_pager);
         mTopLayout = findViewById(R.id.top_layout);
+        mExtendedFab = findViewById(R.id.extended_fab);
         mTopLayout.setPadding(0, SystemBarHelper.getStatusBarHeight(this), 0, 0);
 
         mLockMainPresenter = new LockMainPresenter(this, this);
         mLockMainPresenter.loadAppInfo(this);
-        //
+
+        mExtendedFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(MainActivity.this, CreatePwdActivity.class);
+                startActivity(intent2);
+                finish();
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
     }
 
     private void RequestPermission() {

@@ -3,6 +3,7 @@ package com.teamphonix.wordlock.activities.wordlock;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -14,9 +15,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.teamphonix.wordlock.R;
+import com.teamphonix.wordlock.activities.lock.GestureUnlockActivity;
+import com.teamphonix.wordlock.base.AppConstants;
 
-public class WordLockScreenImage extends AppCompatActivity {
+public class WordLockScreenImageActivity extends AppCompatActivity {
     CoordinatorLayout coordinatorLayout;
+    private String pkgName;
+    private String actionFrom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +42,9 @@ public class WordLockScreenImage extends AppCompatActivity {
         TextView mTextViewWord = findViewById(R.id.wordView);
         CheckBox mCheckBoxHelpEye = findViewById(R.id.checkBoxHelpEye);
         String correctWord = "Telescope";
+
+        pkgName = getIntent().getStringExtra(AppConstants.LOCK_PACKAGE_NAME);
+        actionFrom = getIntent().getStringExtra(AppConstants.LOCK_FROM);
 
         ET1.addTextChangedListener(new TextWatcher() {
             @Override
@@ -187,6 +195,12 @@ public class WordLockScreenImage extends AppCompatActivity {
                     toast = Toast.makeText(getApplicationContext(),
                             successMsg,
                             Toast.LENGTH_SHORT);
+                    Intent intent = new Intent(WordLockScreenImageActivity.this, GestureUnlockActivity.class);
+                    intent.putExtra(AppConstants.LOCK_PACKAGE_NAME, pkgName);
+                    intent.putExtra(AppConstants.LOCK_FROM, AppConstants.LOCK_FROM_FINISH);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finish();
 
                 } else {
                     toast = Toast.makeText(getApplicationContext(),
